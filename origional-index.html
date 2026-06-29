@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
     <title>Wellco Services | Northern CO</title>
-    <meta name="description" content="Professional summer property cleanup in Loveland, CO. Gutter cleaning, yard cleanup, weed removal, pressure washing & more. Same-day service available. Call (970) 556-8702 for a free estimate.">
+    <meta name="description" content="Professional summer property cleanup in Loveland, CO. Gutter cleaning, yard cleanup, weed removal, pressure washing &amp; more. Same-day service available. Call (970) 556-8702 for a free estimate.">
     <meta name="keywords" content="property cleanup Loveland CO, gutter cleaning Loveland, yard cleanup Loveland, weed removal Loveland, pressure washing Loveland, junk removal Loveland, summer cleanup Colorado">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Wellco Services">
@@ -26,16 +26,6 @@
             --accent: #9ad84a;
             --dark: #0f2a12;
             --light: #f8f9f6;
-            --text: #222;
-            --card-bg: white;
-            --section-bg: #f4f4f4;
-        }
-
-        [data-theme="dark"] {
-            --text: #f0f0f0;
-            --light: #0a1f0c;
-            --card-bg: #1a2a1c;
-            --section-bg: #0f2a12;
         }
 
         * {
@@ -47,9 +37,8 @@
         body {
             font-family: 'Inter', system-ui, sans-serif;
             background: var(--light);
-            color: var(--text);
+            color: #222;
             line-height: 1.6;
-            transition: background 0.4s ease, color 0.4s ease;
         }
 
         h1, h2, h3 {
@@ -83,27 +72,6 @@
             z-index: 1;
             max-width: 800px;
             margin: 0 auto;
-        }
-
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: rgba(255,255,255,0.9);
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: all 0.3s;
-        }
-
-        [data-theme="dark"] .theme-toggle {
-            background: rgba(26,42,28,0.95);
-            color: #9ad84a;
         }
 
         .hero h1 {
@@ -160,25 +128,37 @@
             color: var(--primary);
         }
 
-        .features, .services, .testimonial-grid {
+        .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
+            margin-bottom: 80px;
         }
 
-        .feature, .service, .testimonial {
-            background: var(--card-bg);
+        .feature {
+            background: white;
             padding: 40px 30px;
             border-radius: 16px;
+            text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             transition: transform 0.3s;
         }
 
-        .feature:hover, .service:hover, .testimonial:hover {
+        .feature:hover {
             transform: translateY(-10px);
         }
 
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 25px;
+        }
+
         .service {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
             border-top: 5px solid var(--accent);
         }
 
@@ -198,14 +178,38 @@
             margin: 80px 0;
         }
 
+        .bundle h2 {
+            color: var(--accent);
+            font-size: 2.4rem;
+        }
+
         .testimonials {
-            background: var(--section-bg);
+            background: #f4f4f4;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
         }
 
         .contact {
             background: var(--dark);
             color: white;
             text-align: center;
+        }
+
+        .contact-info {
+            font-size: 2.2rem;
+            margin: 30px 0;
+            font-weight: 700;
         }
 
         .footer {
@@ -225,14 +229,10 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.8rem; }
             .hero h2 { font-size: 1.8rem; }
-            .theme-toggle { top: 15px; right: 15px; width: 45px; height: 45px; font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
-
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☀️</button>
 
     <!-- HERO -->
     <section class="hero">
@@ -318,7 +318,7 @@
         <!-- TESTIMONIALS -->
         <section class="testimonials">
             <div class="container">
-                <h2 class="section-title" style="color:white;">What Our Loveland Neighbors Say</h2>
+                <h2 class="section-title" style="color:#222;">What Our Loveland Neighbors Say</h2>
                 <div class="testimonial-grid">
                     <div class="testimonial">
                         <p>"Best decision I made all summer. They cleaned my gutters and yard in one day. Extremely professional and fair pricing."</p>
@@ -358,7 +358,7 @@
         <p style="margin-top:10px;">Satisfaction Guaranteed • Licensed &amp; Insured</p>
     </footer>
 
-    <!-- Structured Data -->
+    <!-- Structured Data for Local SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -380,29 +380,5 @@
     }
     </script>
 
-    <script>
-        const toggleBtn = document.getElementById('theme-toggle');
-        const html = document.documentElement;
-
-        function setTheme(theme) {
-            html.setAttribute('data-theme', theme);
-            toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
-            localStorage.setItem('theme', theme);
-        }
-
-        // Load saved theme or respect system preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setTheme(savedTheme);
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme('dark');
-        }
-
-        // Toggle handler
-        toggleBtn.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-        });
-    </script>
 </body>
 </html>
