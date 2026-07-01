@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>Wellco Services | Northern CO</title>
-    <meta name="description" content="Professional summer property cleanup in Loveland, CO. Gutter cleaning, yard cleanup, weed removal, pressure washing & more. Same-day service available. Call (970) 556-8702 for a free estimate.">
-    <meta name="keywords" content="property cleanup Loveland CO, gutter cleaning Loveland, yard cleanup Loveland, weed removal Loveland, pressure washing Loveland, junk removal Loveland, summer cleanup Colorado">
-    <meta name="robots" content="index, follow">
+    <!-- Enhanced SEO Meta Tags -->
+    <title>Wellco Services | Property Cleanup Loveland CO | Gutter Cleaning, Yard Cleanup & More</title>
+    <meta name="description" content="Professional summer property cleanup services in Loveland, CO. Gutter cleaning, yard cleanup, weed removal, pressure washing, junk removal & more. Same-day service available. Locally owned. Call (970) 556-8702 for a free estimate today.">
+    <meta name="keywords" content="property cleanup Loveland CO, gutter cleaning Loveland CO, yard cleanup Loveland, weed removal Loveland, pressure washing Loveland, junk removal Loveland CO, leaf removal Loveland, bush trimming Loveland, summer cleanup Northern Colorado, Loveland property maintenance">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="Wellco Services">
+    <meta name="geo.region" content="CO">
+    <meta name="geo.placename" content="Loveland, Colorado">
+    <meta name="geo.position" content="40.3975;-105.0749">
+    <meta name="ICBM" content="40.3975, -105.0749">
     <link rel="canonical" href="https://wellco.online/">
+    <link rel="alternate" hreflang="en" href="https://wellco.online/">
 
     <!-- Open Graph / Social -->
-    <meta property="og:title" content="Summer Property Cleanup Loveland CO | Wellco Services">
-    <meta property="og:description" content="Reliable local property cleanup services in Loveland, Colorado. Fast, professional, and affordable.">
+    <meta property="og:title" content="Wellco Services - Expert Property Cleanup in Loveland, Colorado">
+    <meta property="og:description" content="Fast, reliable, and affordable yard cleanup, gutter cleaning, pressure washing & junk removal in Loveland CO and Northern Colorado. Same-day service.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://wellco.online/">
+    <meta property="og:image" content="https://wellco.online/images/flyer.png">
+    <meta property="og:site_name" content="Wellco Services">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wellco Services | Loveland Property Cleanup">
+    <meta name="twitter:description" content="Professional summer cleanup services in Loveland CO. Call (970) 556-8702.">
+    <meta name="twitter:image" content="https://wellco.online/images/flyer.png">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
@@ -38,11 +52,7 @@
             --section-bg: #0f2a12;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Inter', system-ui, sans-serif;
@@ -52,16 +62,13 @@
             transition: background 0.4s ease, color 0.4s ease;
         }
 
-        h1, h2, h3 {
-            font-family: 'Playfair Display', sans-serif;
-            font-weight: 700;
-        }
+        h1, h2, h3 { font-family: 'Playfair Display', sans-serif; font-weight: 700; }
 
         .hero {
             background: linear-gradient(135deg, #123d17 0%, #2e5f22 100%);
             color: white;
             text-align: center;
-            padding: 120px 20px 100px;
+            padding: 140px 20px 100px;
             position: relative;
             overflow: hidden;
         }
@@ -69,71 +76,35 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
             opacity: 0.25;
             z-index: 0;
         }
 
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+        .hero-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
 
         .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: rgba(255,255,255,0.9);
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            z-index: 1000;
+            position: fixed; top: 20px; right: 20px;
+            background: rgba(255,255,255,0.9); border: none;
+            width: 50px; height: 50px; border-radius: 50%;
+            font-size: 1.5rem; cursor: pointer; z-index: 1000;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: all 0.3s;
         }
 
         [data-theme="dark"] .theme-toggle {
-            background: rgba(26,42,28,0.95);
-            color: #9ad84a;
+            background: rgba(26,42,28,0.95); color: #9ad84a;
         }
 
-        .hero h1 {
-            font-size: 3.8rem;
-            margin-bottom: 12px;
-            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
-        }
-
-        .hero h2 {
-            color: var(--accent);
-            font-size: 2.2rem;
-            margin-bottom: 24px;
-        }
-
-        .hero p {
-            font-size: 1.35rem;
-            margin-bottom: 40px;
-            opacity: 0.95;
-        }
+        .hero h1 { font-size: 3.8rem; margin-bottom: 12px; text-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+        .hero h2 { color: var(--accent); font-size: 2.2rem; margin-bottom: 24px; }
+        .hero p { font-size: 1.35rem; margin-bottom: 40px; opacity: 0.95; }
 
         .btn {
-            display: inline-block;
-            padding: 18px 40px;
-            background: var(--accent);
-            color: #111;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.2rem;
-            border-radius: 50px;
-            transition: all 0.3s ease;
+            display: inline-block; padding: 18px 40px;
+            background: var(--accent); color: #111;
+            text-decoration: none; font-weight: 700; font-size: 1.2rem;
+            border-radius: 50px; transition: all 0.3s ease;
             box-shadow: 0 8px 20px rgba(154, 216, 74, 0.3);
         }
 
@@ -143,21 +114,12 @@
             box-shadow: 0 12px 25px rgba(154, 216, 74, 0.4);
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section {
-            padding: 90px 0;
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 90px 0; }
 
         .section-title {
-            text-align: center;
-            font-size: 2.8rem;
-            margin-bottom: 60px;
-            color: var(--primary);
+            text-align: center; font-size: 2.8rem;
+            margin-bottom: 60px; color: var(--primary);
         }
 
         .features, .services, .testimonial-grid {
@@ -174,58 +136,44 @@
             transition: transform 0.3s;
         }
 
-        .feature:hover, .service:hover, .testimonial:hover {
-            transform: translateY(-10px);
-        }
+        .feature:hover, .service:hover, .testimonial:hover { transform: translateY(-10px); }
+        .service { border-top: 5px solid var(--accent); }
 
-        .service {
-            border-top: 5px solid var(--accent);
-        }
-
-        .price {
-            color: var(--primary);
-            font-size: 1.6rem;
-            font-weight: 700;
-            float: right;
-        }
+        .price { color: var(--primary); font-size: 1.6rem; font-weight: 700; float: right; }
 
         .bundle {
             background: linear-gradient(135deg, var(--primary), #2e5f22);
-            color: white;
-            padding: 60px 40px;
-            border-radius: 20px;
-            text-align: center;
-            margin: 80px 0;
+            color: white; padding: 60px 40px; border-radius: 20px;
+            text-align: center; margin: 80px 0;
         }
 
-        .testimonials {
-            background: var(--section-bg);
-        }
+        .testimonials { background: var(--section-bg); }
 
         .contact {
-            background: var(--dark);
-            color: white;
-            text-align: center;
+            background: var(--dark); color: white; text-align: center;
         }
 
         .footer {
-            background: #0a1f0c;
-            color: #ccc;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.95rem;
+            background: #0a1f0c; color: #ccc;
+            text-align: center; padding: 40px 20px; font-size: 0.95rem;
         }
 
         .flyer img {
-            max-width: 100%;
-            border-radius: 16px;
+            max-width: 100%; border-radius: 16px;
             box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        /* FAQ Styles */
+        .faq-item { margin-bottom: 20px; }
+        .faq-question {
+            font-weight: 600; cursor: pointer;
+            padding: 15px; background: var(--card-bg);
+            border-radius: 8px;
         }
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.8rem; }
             .hero h2 { font-size: 1.8rem; }
-            .theme-toggle { top: 15px; right: 15px; width: 45px; height: 45px; font-size: 1.3rem; }
         }
     </style>
 </head>
@@ -235,12 +183,12 @@
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☀️</button>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>Wellco Services</h1>
-            <h2>Loveland, Colorado</h2>
-            <p>Fast • Reliable • Locally Owned</p>
-            <a href="tel:9705568702" class="btn">📞 (970) 556-8702 — Free Estimate</a>
+            <h2>Professional Property Cleanup in Loveland, Colorado</h2>
+            <p>Same-day gutter cleaning, yard cleanup, weed removal, pressure washing & junk removal. Locally owned & trusted across Northern Colorado.</p>
+            <a href="tel:9705568702" class="btn" aria-label="Call for free estimate">📞 (970) 556-8702 — Free Estimate</a>
         </div>
     </section>
 
@@ -249,88 +197,101 @@
         <!-- TRUST SIGNALS -->
         <div class="features">
             <div class="feature">
-                <h3>✅ Free Estimates</h3>
-                <p>No-obligation quotes in as little as 30 minutes. <strong><u>We will try to beat any and all estimates.</u></strong></p>
+                <h3>✅ Free Estimates in 30 Minutes</h3>
+                <p>We will beat any written estimate for property cleanup in Loveland CO.</p>
             </div>
             <div class="feature">
-                <h3>✅ Same-Day Service</h3>
-                <p>Available for urgent cleanups in Loveland &amp; surrounding areas.</p>
+                <h3>✅ Same-Day Service Available</h3>
+                <p>Fast response for urgent yard cleanup, gutter cleaning & junk removal in Loveland & surrounding areas.</p>
             </div>
             <div class="feature">
-                <h3>✅ 100% Satisfaction</h3>
-                <p>Professional work you can trust. Locally owned since day one.</p>
+                <h3>✅ Licensed, Insured & 100% Satisfaction Guaranteed</h3>
+                <p>Locally owned Wellco Services – serving Loveland, Berthoud, Johnstown & Northern Colorado since day one.</p>
             </div>
         </div>
 
         <!-- SERVICES -->
-        <h2 class="section-title">Our Services</h2>
+        <h2 class="section-title" id="services">Our Professional Cleanup Services in Loveland CO</h2>
         
         <div class="services">
             <div class="service">
                 <h3>Gutter Cleaning <span class="price">$70+</span></h3>
-                <p>Complete home gutter cleaning &amp; downspout flush.</p>
+                <p>Complete gutter cleaning and downspout flushing to prevent water damage in Loveland homes.</p>
             </div>
             <div class="service">
-                <h3>Yard Cleanup &amp; Trash Removal <span class="price">$100+</span></h3>
-                <p>Full yard debris haul away.</p>
+                <h3>Yard Cleanup & Trash Removal <span class="price">$100+</span></h3>
+                <p>Full yard debris removal and property cleanup services.</p>
             </div>
             <div class="service">
-                <h3>Weed Removal <span class="price">$50+</span></h3>
-                <p>Thorough weed pulling and prevention.</p>
+                <h3>Weed Removal & Prevention <span class="price">$50+</span></h3>
+                <p>Thorough manual weed pulling and seasonal weed control in Loveland.</p>
             </div>
             <div class="service">
-                <h3>Bush &amp; Shrub Trimming <span class="price">$75+</span></h3>
-                <p>Professional shaping and cleanup.</p>
+                <h3>Bush & Shrub Trimming <span class="price">$75+</span></h3>
+                <p>Expert shaping, trimming, and cleanup for a polished landscape.</p>
             </div>
             <div class="service">
                 <h3>Leaf Removal <span class="price">$75+</span></h3>
-                <p>Fall &amp; summer leaf haul away.</p>
+                <p>Seasonal leaf cleanup for summer and fall in Northern Colorado.</p>
             </div>
             <div class="service">
-                <h3>Pressure Washing</h3>
-                <p>Driveways — <strong>$100+</strong><br>
-                   Patios &amp; Sidewalks — <strong>$75+</strong></p>
+                <h3>Pressure Washing <span class="price">$75–$150+</span></h3>
+                <p>Driveways, patios, sidewalks & exterior cleaning in Loveland CO.</p>
             </div>
             <div class="service">
                 <h3>Junk Removal <span class="price">$75+</span></h3>
-                <p>Appliances, furniture, construction debris &amp; more.</p>
+                <p>Appliances, furniture, construction debris & estate cleanouts.</p>
             </div>
             <div class="service">
-                <h3>Mulch Installation &amp; Landscape Refresh</h3>
-                <p><strong>Free Estimate</strong></p>
+                <h3>Mulch Installation & Landscape Refresh</h3>
+                <p>Complete property refresh packages. <strong>Free Estimate</strong></p>
             </div>
         </div>
 
         <!-- BUNDLE -->
         <div class="bundle">
-            <h2>Bundle &amp; Save Big</h2>
-            <h3 style="font-size:1.6rem;margin:20px 0;">Gutters + Full Yard Cleanup — <strong>$150</strong> (Save $20)</h3>
-            <h3 style="font-size:1.8rem;">Complete Property Summer Refresh — Starting at <strong>$200</strong></h3>
-            <a href="tel:9705568702" class="btn" style="margin-top:30px;background:white;color:var(--primary);">Book Your Bundle Today</a>
+            <h2>Bundle & Save on Loveland Property Cleanup</h2>
+            <h3>Gutters + Full Yard Cleanup — <strong>$150</strong> (Save $20)</h3>
+            <h3 style="font-size:1.8rem;margin:25px 0;">Complete Summer Property Refresh — Starting at <strong>$200</strong></h3>
+            <a href="tel:9705568702" class="btn" style="margin-top:30px;background:white;color:var(--primary);">Call (970) 556-8702 to Book</a>
         </div>
 
         <!-- FLYER -->
         <div class="flyer" style="text-align:center;margin:60px 0;">
-            <h2 style="margin-bottom:25px;color:var(--primary);">Current Summer Specials</h2>
-            <img src="images/flyer.png" alt="Wellco Services Summer Property Cleanup Specials Loveland CO" style="width:100%;max-width:900px;">
+            <h2 style="margin-bottom:25px;color:var(--primary);">Current Summer Specials – Loveland CO</h2>
+            <img src="images/flyer.png" alt="Wellco Services Summer Property Cleanup Specials Loveland Colorado - Gutter Cleaning Yard Cleanup Deals" style="width:100%;max-width:900px;">
         </div>
 
+        <!-- FAQ -->
+        <section id="faq">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">How quickly can you do yard cleanup in Loveland?</div>
+                <p>Same-day service is often available. Call us and we'll do our best to accommodate your schedule.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer pressure washing in Loveland CO?</div>
+                <p>Yes! We provide professional pressure washing for driveways, patios, and sidewalks.</p>
+            </div>
+            <!-- Add more FAQs as needed -->
+        </section>
+
         <!-- TESTIMONIALS -->
-        <section class="testimonials">
+        <section class="testimonials" id="reviews">
             <div class="container">
-                <h2 class="section-title" style="color:white;">What Our Loveland Neighbors Say</h2>
+                <h2 class="section-title" style="color:white;">Loveland Neighbors Love Wellco Services</h2>
                 <div class="testimonial-grid">
                     <div class="testimonial">
                         <p>"Best decision I made all summer. They cleaned my gutters and yard in one day. Extremely professional and fair pricing."</p>
-                        <strong>— Sarah M., Loveland</strong>
+                        <strong>— Sarah M., Loveland CO</strong>
                     </div>
                     <div class="testimonial">
-                        <p>"Fast response and great work on our pressure washing and weed removal. Highly recommend Wellco Services!"</p>
-                        <strong>— Mike R., Loveland</strong>
+                        <p>"Fast response and great work on our pressure washing and weed removal. Highly recommend!"</p>
+                        <strong>— Mike R., Loveland CO</strong>
                     </div>
                     <div class="testimonial">
-                        <p>"Same-day service when we needed it most. They hauled away a huge amount of junk from our property. Thank you!"</p>
-                        <strong>— Jennifer K., Loveland</strong>
+                        <p>"Same-day junk removal when we needed it most. Professional and reliable."</p>
+                        <strong>— Jennifer K., Loveland CO</strong>
                     </div>
                 </div>
             </div>
@@ -339,48 +300,90 @@
     </div>
 
     <!-- CONTACT -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2>Get Your Free Estimate Today</h2>
+            <h2>Get Your Free Property Cleanup Estimate in Loveland Today</h2>
             <div class="contact-info">
-                <a href="tel:9705568702" style="color:#9ad84a;text-decoration:none;">(970) 556-8702</a>
+                <a href="tel:9705568702" style="color:#9ad84a;text-decoration:none;font-size:1.8rem;">(970) 556-8702</a>
             </div>
             <p style="margin:20px 0;font-size:1.2rem;">
                 <a href="tel:9705568702" style="color:#9ad84a;">Call or Text</a> • 
                 <a href="mailto:bryson@wellco.online" style="color:#9ad84a;">bryson@wellco.online</a>
             </p>
-            <p style="margin-top:40px;opacity:0.9;">Serving Loveland, Berthoud, Johnstown &amp; Northern Colorado</p>
+            <p style="margin-top:40px;opacity:0.9;">Proudly serving Loveland, Berthoud, Johnstown, Windsor & all of Northern Colorado</p>
         </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2026 Wellco Services • Locally Owned &amp; Operated in Loveland, Colorado</p>
-        <p style="margin-top:10px;">Satisfaction Guaranteed • Licensed &amp; Insured</p>
+        <p>&copy; 2026 Wellco Services • Locally Owned & Operated in Loveland, Colorado</p>
+        <p>Satisfaction Guaranteed • Licensed & Insured • <a href="#services" style="color:#9ad84a;">View Services</a></p>
     </footer>
 
-    <!-- Structured Data -->
+    <!-- Enhanced Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Wellco Services",
-      "description": "Professional property cleanup and landscaping services in Loveland, Colorado",
+      "description": "Professional property cleanup, gutter cleaning, yard cleanup, pressure washing and junk removal services in Loveland, Colorado and Northern Colorado.",
       "telephone": "+19705568702",
       "email": "bryson@wellco.online",
+      "url": "https://wellco.online",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Loveland",
         "addressRegion": "CO",
         "addressCountry": "US"
       },
-      "areaServed": ["Loveland", "Berthoud", "Johnstown", "Northern Colorado"],
+      "areaServed": ["Loveland", "Berthoud", "Johnstown", "Windsor", "Northern Colorado"],
       "priceRange": "$$",
       "openingHours": "Mo-Su 07:00-19:00",
-      "url": "https://wellco.online"
+      "image": "https://wellco.online/images/flyer.png",
+      "hasMap": "https://www.google.com/maps/place/Loveland,+CO"
+    }
+    </script>
+
+    <!-- Service Schemas -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Gutter Cleaning",
+        "provider": { "@type": "LocalBusiness", "name": "Wellco Services" },
+        "areaServed": "Loveland CO",
+        "hasOfferCatalog": { "@type": "OfferCatalog", "name": "Gutter Cleaning" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Yard Cleanup",
+        "provider": { "@type": "LocalBusiness", "name": "Wellco Services" },
+        "areaServed": "Loveland CO"
+      }
+    ]
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How quickly can you do yard cleanup in Loveland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Same-day service is often available for yard cleanup and gutter cleaning in Loveland CO."
+          }
+        }
+      ]
     }
     </script>
 
     <script>
+        // Theme toggle script (unchanged)
         const toggleBtn = document.getElementById('theme-toggle');
         const html = document.documentElement;
 
@@ -390,7 +393,6 @@
             localStorage.setItem('theme', theme);
         }
 
-        // Load saved theme or respect system preference
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             setTheme(savedTheme);
@@ -398,10 +400,9 @@
             setTheme('dark');
         }
 
-        // Toggle handler
         toggleBtn.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+            const current = html.getAttribute('data-theme');
+            setTheme(current === 'dark' ? 'light' : 'dark');
         });
     </script>
 </body>
